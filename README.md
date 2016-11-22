@@ -33,7 +33,6 @@ conda search python-editor --channel conda-forge
 ```
 
 
-
 About conda-forge
 =================
 
