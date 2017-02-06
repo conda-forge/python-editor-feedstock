@@ -1,19 +1,21 @@
 {%set name = "python-editor" %}
-{%set version = "1.0.1" %}
+{%set version = "1.0.3" %}
+{%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "8672e9a44a7957741453dd35e842299f6c29f0a88dc9e4316b0fa5935abb9186" %}
+{%set hash_val = "a3c066acee22a1c94f63938341d4fb374e3fdd69366ed6603d7b24bed1efc565" %}
+{%set build_num = "0" %}
 
 package:
-  name: {{ name }}
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  fn: {{ name }}-{{ version }}.{{ compress_type }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 0
+  number: {{ build_num }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -31,6 +33,8 @@ test:
 about:
   home: https://github.com/fmoo/python-editor
   license: Apache 2.0
+  license_family: Apache
+  license_file: LICENSE
   summary: 'Programmatically open an editor, capture the result.'
 
 extra:
