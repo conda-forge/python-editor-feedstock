@@ -1,8 +1,8 @@
 {% set name = "python-editor" %}
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 {% set compress_type = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "a3c066acee22a1c94f63938341d4fb374e3fdd69366ed6603d7b24bed1efc565" %}
+{% set hash_val = "51fda6bcc5ddbbb7063b2af7509e43bd84bfc32a4ff71349ec7847713882327b" %}
 
 package:
   name: {{ name|lower }}
