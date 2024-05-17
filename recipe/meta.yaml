@@ -32,7 +32,7 @@ test:
 
 about:
   home: https://github.com/fmoo/python-editor
-  license: Apache 2.0
+  license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
   summary: 'Programmatically open an editor, capture the result.'

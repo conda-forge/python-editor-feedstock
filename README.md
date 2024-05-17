@@ -7,9 +7,9 @@ About python-editor
 
 Home: https://github.com/fmoo/python-editor
 
-Package license: Apache 2.0
+Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Programmatically open an editor, capture the result.
 
